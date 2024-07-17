@@ -1,0 +1,61 @@
+description: EV Nova Community Edition
+game_slug: ev-nova
+gogslug: ''
+humblestoreid: ''
+installer_slug: EV Nova Community Edition
+name: EV Nova Community Edition
+slug: EV Nova Community Edition
+steamid: null
+version: Standard
+year: 2002
+notes: "Instructions for EV Nova Community Edition"
+runner: wine
+script:
+  files:
+  - evnovazip:
+      filename: EV_Nova_Community_Edition.zip
+      url: https://download.escape-velocity.games/EV_Nova_Community_Edition.zip
+  - ddraw:
+      filename: cnc-ddraw.zip
+      url: https://github.com/FunkyFr3sh/cnc-ddraw/releases/latest/download/cnc-ddraw.zip
+  game:
+    arch: win64
+    exe: drive_c/Program Files (x86)/EV Nova/EV Nova.exe
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      arch: win64
+      description: Creating 64bit Wine prefix
+      name: create_prefix
+      prefix: $GAMEDIR
+  - move:
+      src: ddraw
+      dst: drive_c/Program Files (x86)/
+  - move:
+      src: evnovazip
+      dst: drive_c/Program Files (x86)/
+  - execute:
+      command: unzip "drive_c/Program Files (x86)/EV_Nova_Community_Edition.zip" -d "drive_c/Program Files (x86)" && rm "drive_c/Program Files (x86)/EV_Nova_Community_Edition.zip"
+      description: 'unzipping EV_Nova_Community_Edition.zip'
+  - execute:
+      command: unzip "drive_c/Program Files (x86)/cnc-ddraw.zip" -d "drive_c/Program Files (x86)/EV Nova/cnc-ddraw" && rm "drive_c/Program Files (x86)/EV Nova/cnc-ddraw/ddraw.ini" && rm "drive_c/Program Files (x86)/cnc-ddraw.zip"
+      description: 'unzipping cnc-ddraw'
+  - merge:
+      src: drive_c/Program Files (x86)/EV Nova/cnc-ddraw
+      dst: drive_c/Program Files (x86)/EV Nova/
+  - execute:
+      command: WINEESYNC=1 WINEPREFIX="$GAMEDIR" "$WINEBIN" "drive_c/Program Files (x86)/EV Nova/cnc-ddraw config.exe"
+      description: 'Fixing ddraw.ddl'
+  - task:
+      name: winekill
+      prefix: $GAMEDIR
+  system:
+    prefer_system_libs: false
+    single_cpu: true
+  wine:
+    battleye: false
+    eac: false
+    esync: false
+    fsr: false
+    fsync: false
+    version: lutris-GE-Proton8-13-x86_64

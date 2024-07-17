@@ -7,8 +7,11 @@ Install:
 ```sh
 wine cnc-ddraw\ config.exe
 ```
-- Can try, for bigger ui
+- Can try, for bigger ui + disable fullscreen
+```sh
 sed -i 's/ui_scale=1.0/ui_scale=1.4/' /mnt/xyon/EV\ Nova/ddraw.ini
+sed -i 's/fullscreen=true/fullscreen=false/' /mnt/xyon/EV\ Nova/ddraw.ini
+```
 - Run with wine should be fine
 
 ## Pilots Dir
