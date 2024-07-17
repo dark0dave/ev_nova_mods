@@ -1,0 +1,6 @@
+[submodule "plugins/SuperNOVA-Graphical-Overhaul"]
+	path = plugins/SuperNOVA-Graphical-Overhaul
+	url = https://github.com/SharkyNebula/SuperNOVA-Graphical-Overhaul.git
+[submodule "cnc-ddraw"]
+	path = cnc-ddraw
+	url = https://github.com/FunkyFr3sh/cnc-ddraw.git

@@ -1,0 +1,2 @@
+cnc-ddraw.zip filter=lfs diff=lfs merge=lfs -text
+EV_Nova_Community_Edition.zip filter=lfs diff=lfs merge=lfs -text

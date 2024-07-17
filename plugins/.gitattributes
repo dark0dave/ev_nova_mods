@@ -1,0 +1,4 @@
+ev_nova_icons_1_6429_3104.zip filter=lfs diff=lfs merge=lfs -text
+EV[[:space:]]Nova[[:space:]]QoL[[:space:]]plugins.zip filter=lfs diff=lfs merge=lfs -text
+PlugPackV18.zip filter=lfs diff=lfs merge=lfs -text
+EV[[:space:]]Nova[[:space:]]ARPIA[[:space:]](Standalone).zip filter=lfs diff=lfs merge=lfs -text
