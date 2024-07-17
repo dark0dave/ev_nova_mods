@@ -1,4 +1,7 @@
-ev_nova_icons_1_6429_3104.zip filter=lfs diff=lfs merge=lfs -text
-EV[[:space:]]Nova[[:space:]]QoL[[:space:]]plugins.zip filter=lfs diff=lfs merge=lfs -text
+Full_Screen_Map_for_Windows.zip filter=lfs diff=lfs merge=lfs -text
 PlugPackV18.zip filter=lfs diff=lfs merge=lfs -text
-EV[[:space:]]Nova[[:space:]]ARPIA[[:space:]](Standalone).zip filter=lfs diff=lfs merge=lfs -text
+Polycon[[:space:]]EV.zip filter=lfs diff=lfs merge=lfs -text
+Qaanols_Plugins_v1_1.zip filter=lfs diff=lfs merge=lfs -text
+TheRingbuilders0.1.zip filter=lfs diff=lfs merge=lfs -text
+WinNovaResPatcher.zip filter=lfs diff=lfs merge=lfs -text
+EV[[:space:]]Nova[[:space:]]QoL[[:space:]]plugins.zip filter=lfs diff=lfs merge=lfs -text

@@ -4,3 +4,6 @@
 [submodule "cnc-ddraw"]
 	path = cnc-ddraw
 	url = https://github.com/FunkyFr3sh/cnc-ddraw.git
+[submodule "tools/UniExtract2"]
+	path = tools/UniExtract2
+	url = https://github.com/Bioruebe/UniExtract2

@@ -3,6 +3,10 @@
 Install:
 - unzip EV_Nova_Community_Edition.zip from https://download.escape-velocity.games/
 - unzip cnc-ddraw.zip inside the EV\ Nova folder without dddraw.ini, thats present already with some custom settings
+- inside the EV\ Nova folder run 
+```sh
+wine cnc-ddraw\ config.exe
+```
 - Run with wine should be fine
 
 ## Pilots Dir
