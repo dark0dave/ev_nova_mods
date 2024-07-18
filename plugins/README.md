@@ -19,8 +19,7 @@ https://download.escape-velocity.games/geeks_plugin_collection/
 
 ## Useful links
 
-- 
-
+- http://www.cytheraguides.com/archives/ambrosia_addons/evn/
 
 - https://ev.appcraft.name/evn list of mods here
 - http://download.escape-velocity.games/tools/Plug-in%20Extractor.zip this converts mac plugins to windows ones
