@@ -7,12 +7,10 @@ ARPIA2 - Graphics 2.rez
 ARPIA2 - Music 1.rez
 ARPIA2 - Music 2.rez
 ARPIA2 - Ships.rez
+credits.mov
+gasminer.mov
 Map Size 1440x900.rez
-NewCharacters v8.rez
-NewTargets v3.rez
-ReturnToS7evyn v2.rez
-ShieldBubbles v1.rez
-ShipVariants v2.rez
+Ship Variants 1.0.rez
 SN-GO 01 Shuttle-Cargo Drone.rez
 SN-GO 02 Leviathan.rez
 SN-GO 03 Pegasus-WG Lightning.rez
@@ -57,4 +55,3 @@ SN-z 100 NewPlanets 1.rez
 SN-z 100 NewPlanets 2.rez
 SN-z 101 NeoBullets.rez
 SN-z 102 Enhanced Explosions Light.rez
-TechnicalData v1.rez
