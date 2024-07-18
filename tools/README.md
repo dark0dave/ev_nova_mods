@@ -9,3 +9,6 @@ Stuffit is used to handle .sit files
  - https://stuffit.com/#downloads
 or
 https://github.com/Bioruebe/UniExtract2
+
+## Convert mac files
+- .bin, .hqx with  Convert\ Plug-ins.exe located in the EV/ Nova files

@@ -22,12 +22,21 @@ script:
     arch: win64
     exe: drive_c/Program Files (x86)/EV Nova/EV Nova.exe
     prefix: $GAMEDIR
+    working_dir: /mnt/xyon/ev-nova/drive_c/Program Files (x86)/EV Nova
   installer:
   - task:
       arch: win64
       description: Creating 64bit Wine prefix
       name: create_prefix
       prefix: $GAMEDIR
+  - task:
+      arch: win64
+      description: Setting Windows 10 mode for Wine
+      key: Version
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine
+      prefix: $GAMEDIR
+      value: win10
   - move:
       src: ddraw
       dst: drive_c/Program Files (x86)/
@@ -44,7 +53,7 @@ script:
       src: drive_c/Program Files (x86)/EV Nova/cnc-ddraw
       dst: drive_c/Program Files (x86)/EV Nova/
   - execute:
-      command: WINEESYNC=1 WINEPREFIX="$GAMEDIR" "$WINEBIN" "drive_c/Program Files (x86)/EV Nova/cnc-ddraw config.exe"
+      command: WINEPREFIX="$GAMEDIR" "$WINEBIN" "drive_c/Program Files (x86)/EV Nova/cnc-ddraw config.exe"
       description: 'Fixing ddraw.ddl'
   - task:
       name: winekill
@@ -58,4 +67,5 @@ script:
     esync: false
     fsr: false
     fsync: false
-    version: lutris-GE-Proton8-13-x86_64
+    overwrite:
+        ddraw: "b,n"
